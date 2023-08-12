@@ -14,6 +14,14 @@ Though macroeconomic variables such as term spread and employment are known to b
 
 ## Data Preparation
 [View code](0.Data%20Preparation.ipynb)
+[Data](/data/rawdata_USA.csv) can be accessed through data folder
+- Data Sources: OECD, FRED, Yahoo Finance, NBER
+  - [OECD](https://stats.oecd.org/Index.aspx?QueryId=6617)
+  - [FRED](https://fred.stlouisfed.org/)
+  - [Yahoo Finance](https://finance.yahoo.com/quote/%5EVIX?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuYmluZy5jb20v&guce_referrer_sig=AQAAAA4PqCecADB7jRPFc1zok8-qFh4DqQSOk34atVLfrbddWTd55E2A15f7EStgzKyffi1VS95neqtNMTSYDHO_F4f2tfYUe2MxEe3Twn17hbNcjsMwMdzV_PVcRGgqZGiFhYM1dr8N3fA_ARafsb1wHvxHVRo-UPk3OLARkSDjcIKE)
+  - [NBER](https://www.nber.org/research/business-cycle-dating)
+- All data sources are open to the public and lincences for data use and distribution are respected.
+
 1. Data Downloading through OECD API
 2. Manual Feature selection using relevant features
 - [View the list of manually selected features](/data/metadata_filter.xlsx)
