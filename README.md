@@ -33,6 +33,8 @@ Though macroeconomic variables such as term spread and employment are known to b
 
 1. EDA for class imbalance
 - check class imbalance problem of recession prediction in that recession is far less frequent than that of expansion and compare between OECD-based cycles and NBER-based cycles
+  - reference: https://www.tensorflow.org/tutorials/structured_data/imbalanced_data
+  - The process of capturing the class imbalance problems were designed referring the above tensorflow tutorial codes, though the codes were all customized aligned with the task of "classification of businee cycle".
 
 2. Data Transformation
 - transform features for better interpretability
