@@ -15,7 +15,7 @@ Though macroeconomic variables such as term spread and employment are known to b
 ## Data Preparation
 [View code](0.Data%20Preparation.ipynb)
 
-[Data](/data/rawdata_USA.csv) can be accessed through data folder
+0. [Data](/data/rawdata_USA.csv) can be accessed through data folder
 - Data Sources: OECD, FRED, Yahoo Finance, NBER
   - [OECD](https://stats.oecd.org/Index.aspx?QueryId=6617)
   - [FRED](https://fred.stlouisfed.org/)
@@ -24,6 +24,7 @@ Though macroeconomic variables such as term spread and employment are known to b
 - All data sources are open to the public and lincences for data use and distribution are respected.
 
 1. Data Downloading through OECD API
+
 2. Manual Feature selection using relevant features
 - [View the list of manually selected features](/data/metadata_filter.xlsx)
 
