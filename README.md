@@ -13,10 +13,13 @@ Though macroeconomic variables such as term spread and employment are known to b
 - [Evaluation][def]
 
 ## 0.Data Preparation.ipynb
+[View code](0.Data%20Preparation.ipynb)
 
 
 
 ## Data Preprocessing with EDA
+[View code](1.Data%20Preprocessing.ipynb)
+
 *  Class Imbalance Problem and Comparing OECD and NBER cycles
 *  Data Transformation
 *  Selecting features with minimum 50 years of availability 
@@ -26,6 +29,7 @@ Though macroeconomic variables such as term spread and employment are known to b
 
 
 ## LSTM/GRU modeling
+[View code](2-1.LSTM_GRU%20modeling.ipynb)
 
 1. Modeling
 * Used Functions 
@@ -44,6 +48,8 @@ Though macroeconomic variables such as term spread and employment are known to b
 
 
 ## RF/GB modeling
+[View code](2-2.%20RF_GB%20modeling.ipynb)
+
 * Used Functions 
 -- BlockingTimeSeriesSplit(): make train-validation split object
 & plot_cv_indices(): plot block split results
@@ -66,6 +72,9 @@ Though macroeconomic variables such as term spread and employment are known to b
 ### execute grid search for rf model with full features
 
 ## SHAP Analysis for top LSTM/GRU models
+[View code](3.Shap%20Analysis%20for%20top%20LSTM_GRU%20models.ipynb)
+
+
 - import top 5 models from df_selection.pkl file
 
 - Train and evaluate top 5 models and calculate SHAP values
