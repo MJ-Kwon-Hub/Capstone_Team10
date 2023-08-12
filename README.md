@@ -1,8 +1,8 @@
 # U.S Business Cycle Prediction using deep learning model
 In this git repository, we will test LSTM(Long Short-Term Memory) and GRU(Gated Recurrent Unit) model for classifying the current month into recession or expansion and compare their performances with baseline models such as RF(Random Forest) and GB(Gradient Boost) models. We chose these RNN models because they are appropriate for automatic feature selection from a large number of features and learning temporal dependencies of the data for predicting recession. 
-Though macroeconomic variables such as term spread and employment are known to be powerful signals for identifying recession, we will confirm the previously known predictors and explore other strong predictors for the business cycle through comparison among the models. Especially for LSTM and GRU models, SHAP analysis will be used for extracting important features. 
+Though macroeconomic variables such as term spread and employment are known to be powerful signals for identifying recession, we will confirm the previously known predictors and explore other strong predictors for business cycles through comparison among the models. Especially for LSTM and GRU models, SHAP analysis will be used for extracting important features. 
 
-## Table of Contents
+## **Table of Contents**
 - [Data Preparation](#data-preparation)
 - [Data Preprocessing with EDA](#data-preprocessing-with-eda)
 - Modeling
