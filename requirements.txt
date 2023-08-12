@@ -1,4 +1,4 @@
-The codes were run through Google Colabe environment under Python 3.10.12
+The codes were run through Google Colab environment under Python 3.10.12
 
 ======= main libraries ==========
 tensorflow==2.12.0
