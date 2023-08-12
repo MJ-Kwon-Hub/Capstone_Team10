@@ -1,7 +1,22 @@
-# Capstone_Team10
-Predicting the Recession of the U.S
+# U.S Business Cycle Prediction using deep learning model
+In this git repository, we will test LSTM(Long Short-Term Memory) and GRU(Gated Recurrent Unit) model for classifying the current month into recession or expansion and compare their performances with baseline models such as RF(Random Forest) and GB(Gradient Boost) models. We chose these RNN models because they are appropriate for automatic feature selection from a large number of features and learning temporal dependencies of the data for predicting recession. 
+Though macroeconomic variables such as term spread and employment are known to be powerful signals for identifying recession, we will confirm the previously known predictors and explore other strong predictors for the business cycle through comparison among the models. Especially for LSTM and GRU models, SHAP analysis will be used for extracting important features. 
 
-# Data Preprocessing with EDA
+## Table of Contents
+
+- [Data Preprocessing with EDA](#data-preparation)
+- [Dimensionality Reduction (PCA)](#dimensionality-reduction-pca)
+- [Models](#models)
+  - [Random Forest](#random-forest)
+  - [K-Nearest Neighbors (KNN)](#k-nearest-neighbors-knn)
+  - [Support Vector Machine (SVM)](#support-vector-machine-svm)
+- [Evaluation][def]
+
+## 0.Data Preparation.ipynb
+
+
+
+## Data Preprocessing with EDA
 *  Class Imbalance Problem and Comparing OECD and NBER cycles
 *  Data Transformation
 *  Selecting features with minimum 50 years of availability 
@@ -10,7 +25,7 @@ Predicting the Recession of the U.S
 *  Stationarity Test(ADF test) for final full X data  
 
 
-# LSTM/GRU modeling
+## LSTM/GRU modeling
 
 1. Modeling
 * Used Functions 
@@ -28,7 +43,7 @@ Predicting the Recession of the U.S
 - df_selection: concatenate all candidate LSTM/GRU models result by model specification
 
 
-# RF/GB modeling
+## RF/GB modeling
 * Used Functions 
 -- BlockingTimeSeriesSplit(): make train-validation split object
 & plot_cv_indices(): plot block split results
@@ -50,12 +65,10 @@ Predicting the Recession of the U.S
 ### define function for random forest grid search
 ### execute grid search for rf model with full features
 
-# SHAP Analysis for top LSTM/GRU models
-## import top 5 models from df_selection.pkl file
+## SHAP Analysis for top LSTM/GRU models
+- import top 5 models from df_selection.pkl file
 
-
-## Train and evaluate top 5 models and calculate SHAP values
-
+- Train and evaluate top 5 models and calculate SHAP values
 * train each model with (train + validation) dataset and evaluate for final test dataset (last 5 years)
 -- final train dataset = 74.12~17.12 (The first 23 month from 73.1 were removed due to application of 24month-timesteps)
 -- final test dataset = 18.1~22.12
@@ -79,3 +92,6 @@ Predicting the Recession of the U.S
 
 ## plot SHAP force plot for the COVID-19 pandemic case study
 
+
+
+[def]: #evaluation
