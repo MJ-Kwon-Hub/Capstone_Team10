@@ -3,29 +3,39 @@ In this git repository, we will test LSTM(Long Short-Term Memory) and GRU(Gated 
 Though macroeconomic variables such as term spread and employment are known to be powerful signals for identifying recession, we will confirm the previously known predictors and explore other strong predictors for the business cycle through comparison among the models. Especially for LSTM and GRU models, SHAP analysis will be used for extracting important features. 
 
 ## Table of Contents
+- [Data Preparation](#data-preparation)
+- [Data Preprocessing with EDA](#data-preprocessing-with-eda)
+- Modeling
+  - [LSTM/GRU modeling](#lstmgru-modeling)
+  - [RF/GB modeling](#rfgb-modeling)
+- Evaluation
+  - [SHAP Analysis for top LSTM/GRU models](#shap-analysis-for-top-lstmgru-models)
 
-- [Data Preprocessing with EDA](#data-preparation)
-- [Dimensionality Reduction (PCA)](#dimensionality-reduction-pca)
-- [Models](#models)
-  - [Random Forest](#random-forest)
-  - [K-Nearest Neighbors (KNN)](#k-nearest-neighbors-knn)
-  - [Support Vector Machine (SVM)](#support-vector-machine-svm)
-- [Evaluation][def]
 
-## 0.Data Preparation.ipynb
+## Data Preparation
 [View code](0.Data%20Preparation.ipynb)
-
+1. Data Downloading through OECD API
+2. Manual Feature selection using relevant features
+- [View the list of manually selected features](/data/metadata_filter.xlsx)
 
 
 ## Data Preprocessing with EDA
 [View code](1.Data%20Preprocessing.ipynb)
 
-*  Class Imbalance Problem and Comparing OECD and NBER cycles
-*  Data Transformation
-*  Selecting features with minimum 50 years of availability 
-*  Imputing missing values using linear interpolation
-*  Blocked Time Series Split for train-validation dataset + 5years of test dataset
-*  Stationarity Test(ADF test) for final full X data  
+1. EDA for class imbalance
+- check class imbalance problem of recession prediction in that recession is far less frequent than that of expansion and compare between OECD-based cycles and NBER-based cycles
+
+2. Data Transformation
+- [View the transformation method using 'Tcode'](/data/metadata_final.csv)
+- transformation method: difference, log-difference, no transformation
+
+3. Selecting features with minimum 50 years of availability 
+
+4. Imputing missing values using linear interpolation
+
+5. Blocked Time Series Split for train-validation dataset + 5years of test dataset
+
+6. Stationarity Test(ADF test) for final full X data  
 
 
 ## LSTM/GRU modeling
