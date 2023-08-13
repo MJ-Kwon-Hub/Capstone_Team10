@@ -2,6 +2,40 @@
 In this git repository, we will test LSTM(Long Short-Term Memory) and GRU(Gated Recurrent Unit) model for classifying the current month into recession or expansion and compare their performances with baseline models such as RF(Random Forest) and GB(Gradient Boost) models. We chose these RNN models because they are appropriate for automatic feature selection from a large number of features and learning temporal dependencies of the data for predicting recession. 
 Though macroeconomic variables such as term spread and employment are known to be powerful signals for identifying recession, we will confirm the previously known predictors and explore other strong predictors for business cycles through comparison among the models. Especially for LSTM and GRU models, SHAP analysis will be used for extracting important features. 
 
+## **Requirements and How to run the codes**
+[View requirements](/requirements.txt)
+- The whole codes were written under Google Colab environment under Python 3.10.12
+- In order to run the codes, you'll need the following libraries.
+  - tensorflow==2.12.0
+  - keras==2.12.0
+  - sklearn-pandas==2.2.0
+  - numpy==1.23.5
+  - pandas==1.5.3
+  - pandas-datareader==0.10.0
+  - seaborn==0.12.2
+  - matplotlib==3.7.1
+  - shapely==2.0.1
+- How to run 
+  - running order: 
+  0. Data Preparation --> 1. Data Preprocessing --> 
+  2-1.LSTM_GRU modeling --> RF_GB modeling --> 
+  3.Shap Analysis for top LSTM_GRU models
+  - **To run the codes on your local environment**
+    - 1) download whole codes and 'data' folder 
+    - 2) create 'model' folder (the same level as 'data' folder)
+    - 3) erase the following part of mounting drive in google colab environment 
+      ```
+      from google.colab import drive
+      drive.mount('/content/drive')
+      nb_path = '/content/notebooks'
+      os.symlink('/content/drive/My Drive/Colab Notebooks', nb_path)
+      sys.path.insert(0,nb_path)
+      ```
+      path='drive/MyDrive/Capstone(Team10)/code'      
+      ```
+    - 4) change 'path+'/{relative path}' to '{relative path}'
+      
+
 ## **Table of Contents**
 - [Data Preparation](#data-preparation)
 - [Data Preprocessing with EDA](#data-preprocessing-with-eda)
