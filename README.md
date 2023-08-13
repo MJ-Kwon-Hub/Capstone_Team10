@@ -31,6 +31,7 @@ Though macroeconomic variables such as term spread and employment are known to b
       os.symlink('/content/drive/My Drive/Colab Notebooks', nb_path)
       sys.path.insert(0,nb_path)
       ```
+      ```
       path='drive/MyDrive/Capstone(Team10)/code'      
       ```
     - 4) change 'path+'/{relative path}' to '{relative path}'
