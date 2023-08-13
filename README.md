@@ -20,7 +20,7 @@ Though macroeconomic variables such as term spread and employment are known to b
   0. Data Preparation --> 1. Data Preprocessing --> 
   2-1.LSTM_GRU modeling --> RF_GB modeling --> 
   3.Shap Analysis for top LSTM_GRU models
-  - **To run the codes on your local environment**
+  - ***To run the codes on your local environment***
     - 1) download whole codes and 'data' folder 
     - 2) create 'model' folder (the same level as 'data' folder)
     - 3) erase the following part of mounting drive in google colab environment 
